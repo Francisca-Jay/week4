@@ -1,0 +1,65 @@
+<!----------CSS Grid Layout------------>
+<style>
+  /* CSS Grid Layout */
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: black;
+    display: flex;
+    place-items: center;
+    height: 100vh;
+  }
+
+  main {
+    display: grid;
+    grid-template-areas:
+      'a a b'
+      'c d d'
+      'c e e'
+    ;
+    gap: 7px;
+    width: 50%;
+    margin: auto;
+    grid-template-columns: 180px 150px 200px;
+    grid-template-rows: 170px 80px 80px;
+  }
+
+  
+  .item-a {
+    background-color: #eb5020;
+    grid-area: a;
+  }
+
+  .item-b {
+    background-color: #ffa401;
+    grid-area: b;
+  }
+
+  .item-c {
+    background-color: #05aa42;
+    grid-area: c;
+  }
+
+  .item-d {
+    background-color: #01aefd;
+    grid-area: d;
+  }
+
+  .item-e {
+    background-color: #01aefd;
+    grid-area: e;
+  }
+
+  .click-here {
+    margin-bottom: auto;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    
+  }
+
+</style>
